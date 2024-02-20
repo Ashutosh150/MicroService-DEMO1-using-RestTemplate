@@ -1,0 +1,14 @@
+server:
+  port: 8761
+
+#Eurek server Configuration
+# we need to inform the server that u don't have to get auto register
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry : false
+  server:
+    waitTimeInMsWhenSyncEmpty : 0
+
+  instance:
+    hostname: localhost

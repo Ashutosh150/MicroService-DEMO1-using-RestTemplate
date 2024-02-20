@@ -1,0 +1,7 @@
+User-Service >> port : 9001
+
+Contacts-Service >> port : 9002
+
+Eureka-Server >> port : 8761
+
+api-gateway >> port : 8999

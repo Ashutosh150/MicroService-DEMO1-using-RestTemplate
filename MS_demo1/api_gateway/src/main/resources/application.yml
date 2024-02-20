@@ -1,0 +1,31 @@
+server:
+  port : 8999
+
+
+# eureka configuration's
+spring:
+  application:
+    name: api-gateway
+
+    #api-gateway configuraion's
+    cloud:
+      gateway:
+        routes:
+          - id : user-service
+            # lb == loadbalancing we had done
+            uri : lb://localhost
+            predicates:
+              - Path=/user/**
+
+          - id: contact-service
+            # lb == loadbalancing we had done
+            uri: lb://contact-service
+            predicates:
+              - Path=/CONTACT/**
+
+
+eureka:
+  instance:
+    hostname : localhost
+
+
