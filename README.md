@@ -1,1 +1,1 @@
-This is Practice For MicroServices using Eureka Service Delivery 
+This is Practice For MicroServices using RestTemplate Http Method of communication between Services
